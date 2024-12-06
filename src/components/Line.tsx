@@ -24,8 +24,7 @@ export default function Line() {
                                         <b>Experiencia Laboral:</b>
                                     </h2>
                                     <span className="dark:text-white text-md text-serif"
-                                    >No tuve Trabajo como Desarrollador en ninguna empresa,  
-                                        <b className="text-kai-button"></b>
+                                    >No tuve Trabajo como Desarrollador en ninguna empresa, Pero forme parte en Proyectos Gracias a mi <b className="text-kai-button">Experiencia como Desarrollador Web</b>
                                     </span>
                                     <div></div>
                                 </div>
@@ -42,13 +41,10 @@ export default function Line() {
                                 </div>
                                 <div className="pl-6">
                                     <h2 className="text-sans text-xl  mb-2">
-                                        <b>Experiencia Laboral?</b>
+                                        <b>Ruta de Aprendizaje</b>
                                     </h2>
                                     <span className=" text-md text-serif"
-                                    >No tuve Trabajo como Desarrollador en ninguna
-                                        empresa, Pero <b className="text-kai-button"
-                                        >Trabaje con Negocios</b>
-                                        Gracias a mi Experiencia.</span>
+                                    >Soy un Desarrollador Web Autodidacta, Con experiencia en lenguajes como <b className="text-kai-button">Javascript y Typescript, </b> y Frameworks como <b className="text-kai-button">React, Next, Astro, Tailwind, Shadcn, y mas.</b> </span>
                                     <div></div>
                                 </div>
                             </div>

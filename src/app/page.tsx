@@ -9,22 +9,128 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+const array = [
+  {
+    index: "",
+    svg: "",
+  },
+  {
+    index: "",
+    svg: "",
+  },
+  {
+    index: "",
+    svg: "",
+  },
+  {
+    index: "",
+    svg: "",
+  },
+  {
+    index: "",
+    svg: "",
+  },
+]
+
 export default function Home() {
   return (
     <>
       <div className="bg-kai-bgblack w-full h-full text-white">
         <Hero />
-
+        
         <div>
-          <div id="EXP" className="py-6"></div>
+          <div id="EXP" className="pt-6"></div>
           <Line />
         </div>
 
+        <div className="flex justify-center">
+          <div className="max-w-[250px]  md:max-w-[450px] lg:min-w-[750px] lg:max-w-[750px] py-6">
+          <span className="text-white text-xl underline"><b>Lenguajes/Frameworks</b></span>
+            <Carousel
+              opts={{
+                align: "start",
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
 
-        <div id="PRO"></div>
-        <div  className="w-full " >
+                <CarouselItem className="basis-1/3 md:basis-1/4 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="bg-transparent border-0 shadow-none max-h-[100px]">
+                      <CardContent className="max-h-[100px] flex flex-col aspect-square items-center justify-center p-6">
+                        <img src="/typescript.svg" alt="" />
+                        <span className="text-white text-sm font-semibold">Typescript</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="basis-1/3 md:basis-1/4 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="bg-transparent border-0 shadow-none max-h-[100px]">
+                      <CardContent className="max-h-[100px] flex flex-col aspect-square items-center justify-center p-6">
+                        <img src="/javascript.svg" alt="" />
+                        <span className="text-white text-sm font-semibold">Javascript</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="basis-1/3 md:basis-1/4 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="border-0 bg-transparent shadow-none max-h-[100px]">
+                      <CardContent className="max-h-[100px] flex flex-col aspect-square items-center justify-center p-6">
+                        <img src="/tailwind.svg" alt="" />
+                        <span className="text-white text-sm font-semibold">Tailwind</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="basis-1/3 md:basis-1/4 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="bg-transparent border-0 shadow-none max-h-[100px]">
+                      <CardContent className="max-h-[100px] flex flex-col aspect-square items-center justify-center p-6">
+                        <img src="/next.svg" alt="" />
+                        <span className="text-white text-sm font-semibold">NextJS</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="basis-1/3 md:basis-1/4 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="bg-transparent border-0 shadow-none max-h-[100px]">
+                      <CardContent className="max-h-[100px] flex flex-col aspect-square items-center justify-center p-6">
+                        <img src="/astro.svg" alt="" />
+                        <span className="text-white text-sm font-semibold">Astro</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+
+                <CarouselItem className="basis-1/3 md:basis-1/4 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="bg-transparent border-0 shadow-none max-h-[100px]">
+                      <CardContent className="max-h-[100px] flex flex-col aspect-square items-center justify-center p-6">
+                        <img src="/react.svg" alt="" />
+                        <span className="text-white text-sm font-semibold">React</span>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+
+
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </div>
+
+        <div className="w-full " id="PRO" >
           <div className="w-full flex flex-col items-center">
-            <div  className="flex md:max-w-[450px] md:min-w-[450px]  lg:min-w-[750px] lg:max-w-[750px]">
+            <div className="flex md:max-w-[450px] md:min-w-[450px]  lg:min-w-[750px] lg:max-w-[750px]">
               <h3
                 className=" underline text-xl"
               >
@@ -43,9 +149,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus saepe ad voluptatem tempora fugiat nam cumque sapiente obcaecati tenetur. Neque, quaerat libero quo temporibus nesciunt excepturi voluptate inventore quidem!</span>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus saepe ad voluptatem tempora fugiat nam cumque sapiente obcaecati tenetur. Neque, quaerat libero quo temporibus nesciunt excepturi voluptate inventore quidem!</span>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus saepe ad voluptatem tempora fugiat nam cumque sapiente obcaecati tenetur. Neque, quaerat libero quo temporibus nesciunt excepturi voluptate inventore quidem!</span>
+
+
       </div>
     </>
   );
